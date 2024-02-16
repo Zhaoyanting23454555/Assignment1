@@ -31,3 +31,13 @@ if __name__ == "__main__":
     output = sys.argv[3]
 
     clean_data(input1, input2, output)
+
+
+def clean_data(input1, input2, output):
+    # 之前的代码...
+
+    # 保存清洗后的数据到输出文件
+    merged_df.to_csv(output, index=False)
+
+    # 打印输出文件的形状
+    print("Output file shape:", merged_df.shape)
